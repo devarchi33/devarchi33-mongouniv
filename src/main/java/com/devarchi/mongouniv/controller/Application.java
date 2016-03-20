@@ -36,5 +36,7 @@ public class Application {
 
             return writer;
         });
+
+        get("/echo/:thing", (request, response) -> request.params(":thing"));
     }
 }
